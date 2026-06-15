@@ -123,23 +123,8 @@
       position: fixed; inset: 0; z-index: 9990;
       pointer-events: none;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-      opacity: .03;
+      opacity: .025;
     }
-
-    /* Subtle vignetting for more premium look */
-    body::before {
-      content: '';
-      position: fixed; inset: -40px;
-      z-index: 9985;
-      pointer-events: none;
-      background:
-        radial-gradient(ellipse at top, rgba(201,168,76,.08) 0%, transparent 55%),
-        radial-gradient(ellipse at bottom, rgba(0,0,0,.65) 0%, transparent 55%),
-        radial-gradient(ellipse at center, transparent 35%, rgba(0,0,0,.6) 100%);
-      opacity: .7;
-      filter: blur(0px);
-    }
-
 
     /* NAV */
     nav {
@@ -246,12 +231,17 @@
       background: rgba(0,0,0,.3);
     }
     .ticker-track {
-      display: flex; gap: 0; white-space: nowrap;
+      display: inline-flex; flex-shrink: 0; gap: 0; white-space: nowrap;
       animation: ticker 28s linear infinite;
+      will-change: transform;
+      min-width: 200%;
     }
-    .ticker-item { font-size: .68rem; font-weight: 600; letter-spacing: .25em; text-transform: uppercase; color: var(--gold); padding: 0 2.5rem; opacity: .7; }
-    .ticker-sep { color: rgba(201,168,76,.3); padding: 0 .5rem; }
-    @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .ticker-item { font-size: .68rem; font-weight: 600; letter-spacing: .25em; text-transform: uppercase; color: var(--gold); padding: 0 2.5rem; opacity: .7; flex-shrink: 0; }
+    .ticker-sep { color: rgba(201,168,76,.3); padding: 0 .5rem; flex-shrink: 0; }
+    @keyframes ticker { 
+      from { transform: translateX(0); } 
+      to   { transform: translateX(-50%); } 
+    }
 
     .hero-eyebrow {
       font-size: clamp(.65rem,.9vw,.78rem); font-weight: 600; letter-spacing: .3em;
@@ -350,7 +340,7 @@
 
     /* MARQUEE */
     .marquee-band { background: var(--gold); overflow: hidden; height: 52px; display: flex; align-items: center; }
-    .marquee-track { display: flex; gap: 0; white-space: nowrap; animation: marqueeFwd 20s linear infinite; }
+    .marquee-track { display: inline-flex; flex-shrink: 0; gap: 0; white-space: nowrap; animation: marqueeFwd 20s linear infinite; will-change: transform; min-width: 200%; }
     .marquee-item { font-size: clamp(.72rem,.85vw,.82rem); font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--black); padding: 0 2.5rem; }
     .marquee-dot { font-size: .5rem; color: rgba(0,0,0,.3); align-self: center; flex-shrink: 0; }
     @keyframes marqueeFwd { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
@@ -657,7 +647,7 @@
         <h2 class="reveal reveal-delay-1">Reputação <em>construída</em><br/>visita a visita</h2>
       </div>
       <div class="reveal reveal-delay-1" style="text-align:right">
-<div class="score-big"><span aria-hidden="true">5,0</span></div>
+        <div class="score-big">5,0</div>
         <div class="score-stars">★★★★★</div>
         <div class="score-count"><span class="count-up" data-target="425">0</span> avaliações no Google</div>
       </div>
