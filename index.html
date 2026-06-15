@@ -123,8 +123,23 @@
       position: fixed; inset: 0; z-index: 9990;
       pointer-events: none;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-      opacity: .025;
+      opacity: .03;
     }
+
+    /* Subtle vignetting for more premium look */
+    body::before {
+      content: '';
+      position: fixed; inset: -40px;
+      z-index: 9985;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse at top, rgba(201,168,76,.08) 0%, transparent 55%),
+        radial-gradient(ellipse at bottom, rgba(0,0,0,.65) 0%, transparent 55%),
+        radial-gradient(ellipse at center, transparent 35%, rgba(0,0,0,.6) 100%);
+      opacity: .7;
+      filter: blur(0px);
+    }
+
 
     /* NAV */
     nav {
@@ -410,11 +425,11 @@
     .footer-links a:hover { color: var(--gold); }
 
     /* REVEAL ANIMATIONS */
-    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .75s cubic-bezier(.22,1,.36,1), transform .75s cubic-bezier(.22,1,.36,1); }
-    .reveal.visible { opacity: 1; transform: none; }
-    .reveal-left  { transform: translateX(-30px); }
-    .reveal-right { transform: translateX(30px); }
-    .reveal-left.visible, .reveal-right.visible { transform: none; }
+    .js-ready .reveal { opacity: 0; transform: translateY(28px); transition: opacity .75s cubic-bezier(.22,1,.36,1), transform .75s cubic-bezier(.22,1,.36,1); }
+    .js-ready .reveal.visible { opacity: 1; transform: none; }
+    .js-ready .reveal-left  { transform: translateX(-30px); }
+    .js-ready .reveal-right { transform: translateX(30px); }
+    .js-ready .reveal-left.visible, .js-ready .reveal-right.visible { transform: none; }
     .reveal-delay-1 { transition-delay: .1s; }
     .reveal-delay-2 { transition-delay: .2s; }
     .reveal-delay-3 { transition-delay: .3s; }
@@ -642,7 +657,7 @@
         <h2 class="reveal reveal-delay-1">Reputação <em>construída</em><br/>visita a visita</h2>
       </div>
       <div class="reveal reveal-delay-1" style="text-align:right">
-        <div class="score-big">5,0</div>
+<div class="score-big"><span aria-hidden="true">5,0</span></div>
         <div class="score-stars">★★★★★</div>
         <div class="score-count"><span class="count-up" data-target="425">0</span> avaliações no Google</div>
       </div>
@@ -770,21 +785,40 @@
     });
 
     /* SCROLL REVEAL */
+    document.body.classList.add('js-ready');
+
     const revealEls = document.querySelectorAll('.reveal');
-    const ro = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          ro.unobserve(e.target);
+
+    function checkReveal() {
+      const vh = window.innerHeight;
+      revealEls.forEach(el => {
+        if (el.classList.contains('visible')) return;
+        const rect = el.getBoundingClientRect();
+        if (rect.top < vh - 30) {
+          el.classList.add('visible');
         }
       });
-    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-    revealEls.forEach(el => ro.observe(el));
+    }
 
-    /* Hero reveal imediato */
-    setTimeout(() => {
-      document.querySelectorAll('#hero .reveal').forEach(el => el.classList.add('visible'));
-    }, 80);
+    // Tenta IntersectionObserver primeiro
+    if ('IntersectionObserver' in window) {
+      const ro = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            ro.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+      revealEls.forEach(el => ro.observe(el));
+    } else {
+      // Fallback scroll listener
+      window.addEventListener('scroll', checkReveal, { passive: true });
+    }
+
+    // Roda imediatamente para elementos já na viewport
+    setTimeout(checkReveal, 100);
+    window.addEventListener('scroll', checkReveal, { passive: true });
 
     /* HIGHLIGHT HOJE */
     const dayNames = ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'];
