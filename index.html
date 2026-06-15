@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Os Beauty Barbearia – Bagé, RS | Corte Masculino, Infantil e Área Kids</title>
+  <meta name="description" content="Barbearia em Bagé, RS, com nota 5,0 no Google (425 avaliações). Corte masculino e infantil, barba com toalha quente, hidratação capilar e a maior área kids da região. Agende online." />
+  <meta name="keywords" content="barbearia Bagé, corte masculino Bagé, corte infantil, barbearia com área kids, barba Bagé RS, Os Beauty" />
+  <meta name="author" content="Os Beauty Barbearia" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://osbeautybarbearia.gendo.app/" />
+
+  <meta property="og:type" content="business.business" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Os Beauty Barbearia – Bagé, RS" />
+  <meta property="og:description" content="Arte no corte, alma no cuidado. Do bebê ao vovô — corte masculino, infantil, barba e a maior área kids de Bagé. Nota 5,0 no Google." />
+  <meta property="og:url" content="https://osbeautybarbearia.gendo.app/" />
+  <meta property="og:site_name" content="Os Beauty Barbearia" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Os Beauty Barbearia – Bagé, RS" />
+  <meta name="twitter:description" content="Arte no corte, alma no cuidado. Corte masculino, infantil, barba e a maior área kids de Bagé. Nota 5,0 no Google." />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230A0A0A'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='58' font-weight='900' fill='%23C9A84C' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#0A0A0A" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Os Beauty Barbearia",
+    "url": "https://osbeautybarbearia.gendo.app/",
+    "telephone": "+5553997012748",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Tupi Silveira, 1852",
+      "addressLocality": "Bagé",
+      "addressRegion": "RS",
+      "postalCode": "96400-110",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens": "09:00","closes": "19:00"},
+      {"@type": "OpeningHoursSpecification","dayOfWeek": "Saturday","opens": "09:00","closes": "17:00"}
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "425",
+      "bestRating": "5"
+    }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:    #0A0A0A;
+      --charcoal: #161616;
+      --charcoal2:#1E1E1E;
+      --gold:     #C9A84C;
+      --gold-lt:  #E2C97A;
+      --gold-dk:  #9A7A30;
+      --cream:    #F5F0E8;
+      --white:    #FAFAFA;
+      --dim:      #888;
+      --px: clamp(1.2rem, 5vw, 5rem);
+      --section-py: clamp(4rem, 8vw, 7rem);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      cursor: none;
+    }
+
+    /* CUSTOM CURSOR */
+    #cursor {
+      width: 12px; height: 12px;
+      background: var(--gold);
+      border-radius: 50%;
+      position: fixed; top: 0; left: 0;
+      pointer-events: none; z-index: 9999;
+      transform: translate(-50%,-50%);
+      transition: width .25s, height .25s, background .25s;
+      mix-blend-mode: difference;
+      will-change: transform;
+    }
+    #cursor-ring {
+      width: 38px; height: 38px;
+      border: 1.5px solid var(--gold);
+      border-radius: 50%;
+      position: fixed; top: 0; left: 0;
+      pointer-events: none; z-index: 9998;
+      transform: translate(-50%,-50%);
+      transition: width .3s, height .3s, opacity .3s;
+      opacity: .5;
+      will-change: transform;
+    }
+    body.cursor-hover #cursor { width: 20px; height: 20px; }
+    body.cursor-hover #cursor-ring { width: 56px; height: 56px; opacity: .25; }
+
+    @media (hover: none) {
+      #cursor, #cursor-ring { display: none; }
+      body { cursor: auto; }
+    }
+
+    ::-webkit-scrollbar { width: 3px; }
+    ::-webkit-scrollbar-track { background: var(--black); }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+    body::after {
+      content: '';
+      position: fixed; inset: 0; z-index: 9990;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      opacity: .025;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; width: 100%; z-index: 500;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.5rem var(--px);
+      transition: background .5s, padding .4s, box-shadow .4s;
+    }
+    nav.scrolled {
+      background: rgba(10,10,10,.88);
+      backdrop-filter: blur(20px) saturate(1.5);
+      padding: .9rem var(--px);
+      box-shadow: 0 1px 0 rgba(201,168,76,.12);
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+      font-weight: 700; letter-spacing: .06em;
+      color: var(--white); text-decoration: none; flex-shrink: 0;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links { display: flex; gap: clamp(1.2rem, 2.5vw, 2.2rem); list-style: none; }
+    .nav-links a {
+      font-size: .78rem; font-weight: 500; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--dim);
+      text-decoration: none; transition: color .25s; position: relative;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: -3px; left: 0;
+      width: 0; height: 1px; background: var(--gold); transition: width .3s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      font-size: .76rem; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--black);
+      background: var(--gold); border: none; cursor: pointer;
+      padding: .65rem 1.5rem; text-decoration: none;
+      transition: background .25s, transform .2s, box-shadow .25s;
+      white-space: nowrap; flex-shrink: 0;
+    }
+    .nav-cta:hover { background: var(--gold-lt); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(201,168,76,.3); }
+    .nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .nav-burger span { display: block; width: 24px; height: 2px; background: var(--white); transition: all .3s; }
+    .nav-burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-burger.open span:nth-child(2) { opacity: 0; }
+    .nav-burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .nav-drawer {
+      display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
+      background: rgba(10,10,10,.97); backdrop-filter: blur(20px);
+      z-index: 400; flex-direction: column;
+      align-items: center; justify-content: center; gap: 2.5rem;
+      opacity: 0; pointer-events: none; transition: opacity .35s;
+    }
+    .nav-drawer.open { opacity: 1; pointer-events: all; }
+    .nav-drawer a { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 6vw, 2.4rem); font-weight: 700; color: var(--white); text-decoration: none; transition: color .25s; }
+    .nav-drawer a:hover { color: var(--gold); }
+    .nav-drawer .drawer-cta { font-family: 'Inter', sans-serif; font-size: .85rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--black); background: var(--gold); padding: 1rem 2.5rem; margin-top: 1rem; }
+
+    /* HERO */
+    #hero {
+      min-height: 100svh;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: flex-start;
+      padding: clamp(6rem,14vw,10rem) var(--px) clamp(3rem,6vw,5rem);
+      position: relative; overflow: hidden;
+    }
+    .hero-orb { position: absolute; border-radius: 50%; pointer-events: none; filter: blur(80px); }
+    .hero-orb-1 {
+      width: clamp(300px, 55vw, 700px); height: clamp(300px, 55vw, 700px);
+      right: -15%; top: -10%;
+      background: radial-gradient(circle, rgba(201,168,76,.12) 0%, transparent 70%);
+      animation: orbFloat1 12s ease-in-out infinite;
+    }
+    .hero-orb-2 {
+      width: clamp(200px, 35vw, 450px); height: clamp(200px, 35vw, 450px);
+      left: -5%; bottom: 10%;
+      background: radial-gradient(circle, rgba(201,168,76,.06) 0%, transparent 70%);
+      animation: orbFloat2 16s ease-in-out infinite;
+    }
+    @keyframes orbFloat1 { 0%,100% { transform: translate(0,0) scale(1); } 33% { transform: translate(-40px, 30px) scale(1.05); } 66% { transform: translate(20px, -20px) scale(.97); } }
+    @keyframes orbFloat2 { 0%,100% { transform: translate(0,0); } 50% { transform: translate(30px, -40px); } }
+
+    .hero-grid {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image: linear-gradient(rgba(201,168,76,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,.035) 1px, transparent 1px);
+      background-size: clamp(50px,8vw,90px) clamp(50px,8vw,90px);
+      mask-image: radial-gradient(ellipse 100% 100% at 50% 50%, black 30%, transparent 80%);
+    }
+
+    .scissor-deco {
+      position: absolute; right: -3%; top: 50%; transform: translateY(-52%);
+      width: clamp(220px, 45vw, 660px); opacity: .055; pointer-events: none;
+      animation: scissorPulse 8s ease-in-out infinite;
+    }
+    @keyframes scissorPulse { 0%,100% { opacity: .055; transform: translateY(-52%) rotate(0deg); } 50% { opacity: .08; transform: translateY(-50%) rotate(2deg); } }
+
+    /* TICKER */
+    .hero-ticker {
+      position: absolute; bottom: 0; left: 0; width: 100%;
+      overflow: hidden; height: 42px;
+      border-top: 1px solid rgba(201,168,76,.1);
+      display: flex; align-items: center;
+      background: rgba(0,0,0,.3);
+    }
+    .ticker-track {
+      display: flex; gap: 0; white-space: nowrap;
+      animation: ticker 28s linear infinite;
+    }
+    .ticker-item { font-size: .68rem; font-weight: 600; letter-spacing: .25em; text-transform: uppercase; color: var(--gold); padding: 0 2.5rem; opacity: .7; }
+    .ticker-sep { color: rgba(201,168,76,.3); padding: 0 .5rem; }
+    @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    .hero-eyebrow {
+      font-size: clamp(.65rem,.9vw,.78rem); font-weight: 600; letter-spacing: .3em;
+      text-transform: uppercase; color: var(--gold);
+      display: flex; align-items: center; gap: .8rem; margin-bottom: clamp(1.2rem,2.5vw,2rem);
+    }
+    .hero-eyebrow::before { content: ''; width: clamp(1.5rem,3vw,2.5rem); height: 1px; background: var(--gold); flex-shrink: 0; }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.6rem, 7.5vw, 7rem);
+      font-weight: 900; line-height: .97; letter-spacing: -.025em;
+      max-width: min(700px, 90vw); margin-bottom: clamp(1.2rem,2vw,2rem);
+    }
+    h1 em { font-style: italic; color: var(--gold); font-weight: 400; }
+
+    .shimmer-text {
+      background: linear-gradient(90deg, var(--white) 0%, var(--white) 40%, var(--gold-lt) 50%, var(--white) 60%, var(--white) 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      animation: shimmer 6s linear infinite 2s;
+    }
+    @keyframes shimmer { 0% { background-position: 200% center; } 100% { background-position: -200% center; } }
+
+    .hero-sub { font-size: clamp(.9rem,1.2vw,1.05rem); font-weight: 300; color: rgba(250,250,250,.58); max-width: min(430px, 90vw); line-height: 1.75; margin-bottom: clamp(2rem,4vw,3rem); }
+
+    .hero-actions { display: flex; gap: clamp(.8rem,2vw,1.3rem); align-items: center; flex-wrap: wrap; }
+    .btn-primary {
+      font-size: clamp(.72rem,.85vw,.82rem); font-weight: 700; letter-spacing: .13em;
+      text-transform: uppercase; color: var(--black);
+      background: var(--gold); border: none; cursor: pointer;
+      padding: clamp(.8rem,.95vw,1.05rem) clamp(1.4rem,2.5vw,2.4rem);
+      text-decoration: none; display: inline-block;
+      transition: background .25s, transform .22s, box-shadow .25s; position: relative; overflow: hidden;
+    }
+    .btn-primary::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,.15), transparent); opacity: 0; transition: opacity .3s; }
+    .btn-primary:hover { background: var(--gold-lt); transform: translateY(-3px); box-shadow: 0 12px 30px rgba(201,168,76,.35); }
+    .btn-primary:hover::after { opacity: 1; }
+    .btn-outline {
+      font-size: clamp(.72rem,.85vw,.82rem); font-weight: 500; letter-spacing: .13em;
+      text-transform: uppercase; color: var(--white);
+      border: 1px solid rgba(250,250,250,.2); cursor: pointer;
+      padding: clamp(.8rem,.95vw,1.05rem) clamp(1.4rem,2.5vw,2.4rem);
+      text-decoration: none; display: inline-block;
+      transition: border-color .25s, color .25s, transform .22s;
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-3px); }
+
+    .hero-stats { position: absolute; bottom: 3.5rem; right: var(--px); display: flex; gap: clamp(1.8rem,4vw,3.5rem); }
+    .stat { text-align: right; }
+    .stat-num { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem,3vw,2.6rem); font-weight: 700; color: var(--gold); line-height: 1; }
+    .stat-label { font-size: clamp(.6rem,.7vw,.72rem); font-weight: 500; letter-spacing: .15em; text-transform: uppercase; color: var(--dim); margin-top: .3rem; }
+
+    .scroll-hint { position: absolute; bottom: 3rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: .45rem; }
+    .scroll-hint span { font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; color: var(--dim); }
+    .scroll-line { width: 1px; height: 48px; background: linear-gradient(to bottom, var(--gold), transparent); animation: scrollDrop 2.2s ease-in-out infinite; }
+    @keyframes scrollDrop { 0%,100% { transform: scaleY(0) translateY(-100%); opacity: 0; transform-origin: top; } 20% { opacity: 1; } 60% { transform: scaleY(1) translateY(0); opacity: 1; transform-origin: top; } 100% { opacity: 0; } }
+
+    /* SECTIONS */
+    section { padding: var(--section-py) var(--px); }
+    .section-label { font-size: clamp(.65rem,.75vw,.72rem); font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); margin-bottom: .9rem; }
+    h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 3.4rem); font-weight: 700; line-height: 1.15; letter-spacing: -.015em; }
+    h2 em { font-style: italic; color: var(--gold); font-weight: 400; }
+    .gold-divider { width: 3rem; height: 2px; background: linear-gradient(90deg, var(--gold), var(--gold-dk)); margin: 1.4rem 0 2.4rem; position: relative; }
+    .gold-divider::after { content: ''; position: absolute; left: 3.4rem; top: 50%; transform: translateY(-50%); width: 5px; height: 5px; background: var(--gold); border-radius: 50%; }
+
+    /* ABOUT */
+    #about { background: var(--charcoal); position: relative; overflow: hidden; }
+    #about::before { content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 40%; min-width: 280px; background: linear-gradient(to left, rgba(201,168,76,.03), transparent); pointer-events: none; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: center; max-width: 1200px; margin: 0 auto; }
+    .about-text p { font-size: clamp(.88rem,1.1vw,1rem); font-weight: 300; line-height: 1.9; color: rgba(250,250,250,.62); margin-top: 1.1rem; }
+    .about-visual { position: relative; }
+    .about-card { background: var(--black); border: 1px solid rgba(201,168,76,.15); padding: clamp(1.8rem,3vw,2.8rem); position: relative; transition: border-color .4s, box-shadow .4s; }
+    .about-card:hover { border-color: rgba(201,168,76,.35); box-shadow: 0 20px 60px rgba(0,0,0,.4), inset 0 0 60px rgba(201,168,76,.03); }
+    .about-card::before { content: '\201C'; font-family: 'Playfair Display', serif; font-size: 7rem; color: rgba(201,168,76,.08); position: absolute; top: -1.5rem; left: 1.2rem; line-height: 1; pointer-events: none; }
+    .about-card-quote { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(1.1rem,1.7vw,1.45rem); line-height: 1.65; color: var(--cream); }
+    .about-card-attr { font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-top: 1.5rem; }
+    .about-badge { position: absolute; top: -1.5rem; right: -1.2rem; width: clamp(70px,9vw,92px); height: clamp(70px,9vw,92px); background: var(--gold); display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 8px 30px rgba(201,168,76,.35); }
+    .about-badge span:first-child { font-family: 'Playfair Display', serif; font-size: clamp(1.4rem,2vw,1.9rem); font-weight: 900; color: var(--black); line-height: 1; }
+    .about-badge span:last-child { font-size: clamp(.45rem,.55vw,.58rem); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--black); }
+    .about-deco-num { position: absolute; right: -3rem; bottom: -3rem; font-family: 'Playfair Display', serif; font-size: 14rem; font-weight: 900; line-height: 1; color: rgba(201,168,76,.03); pointer-events: none; user-select: none; }
+
+    /* SERVICES */
+    #services { background: var(--black); }
+    .services-header { max-width: 1200px; margin: 0 auto clamp(2.5rem,5vw,4rem); }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; max-width: 1200px; margin: 0 auto; }
+    .service-card { background: var(--charcoal); padding: clamp(1.8rem,2.8vw,2.8rem) clamp(1.5rem,2.2vw,2.4rem); border-bottom: 2px solid transparent; transition: border-color .35s, background .35s, transform .35s, box-shadow .35s; cursor: default; position: relative; overflow: hidden; }
+    .service-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(201,168,76,.07) 0%, transparent 55%); opacity: 0; transition: opacity .35s; }
+    .service-card::after { content: ''; position: absolute; top: 0; left: -100%; width: 60%; height: 100%; background: linear-gradient(90deg, transparent, rgba(201,168,76,.05), transparent); transition: left .6s; }
+    .service-card:hover { border-color: var(--gold); background: #1A1A1A; transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,.4); }
+    .service-card:hover::before { opacity: 1; }
+    .service-card:hover::after { left: 140%; }
+    .service-icon { font-size: clamp(1.5rem,2.2vw,1.9rem); margin-bottom: 1.3rem; display: block; }
+    .service-name { font-family: 'Playfair Display', serif; font-size: clamp(1rem,1.5vw,1.28rem); font-weight: 700; margin-bottom: .65rem; }
+    .service-desc { font-size: clamp(.8rem,.95vw,.9rem); font-weight: 300; line-height: 1.75; color: rgba(250,250,250,.5); }
+
+    /* MARQUEE */
+    .marquee-band { background: var(--gold); overflow: hidden; height: 52px; display: flex; align-items: center; }
+    .marquee-track { display: flex; gap: 0; white-space: nowrap; animation: marqueeFwd 20s linear infinite; }
+    .marquee-item { font-size: clamp(.72rem,.85vw,.82rem); font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--black); padding: 0 2.5rem; }
+    .marquee-dot { font-size: .5rem; color: rgba(0,0,0,.3); align-self: center; flex-shrink: 0; }
+    @keyframes marqueeFwd { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* KIDS */
+    #kids { background: var(--charcoal); position: relative; overflow: hidden; }
+    #kids::before { content: 'KIDS'; position: absolute; right: -2rem; top: 50%; transform: translateY(-50%); font-family: 'Playfair Display', serif; font-size: clamp(6rem, 22vw, 20rem); font-weight: 900; color: rgba(201,168,76,.03); line-height: 1; pointer-events: none; user-select: none; }
+    .kids-inner { max-width: 1200px; margin: 0 auto; }
+    .kids-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2.5rem,6vw,5.5rem); align-items: center; }
+    .kids-features { margin-top: 2.2rem; display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; }
+    .kids-feat { background: rgba(201,168,76,.06); border: 1px solid rgba(201,168,76,.1); padding: clamp(.9rem,1.3vw,1.2rem) clamp(1rem,1.5vw,1.4rem); font-size: clamp(.78rem,.92vw,.9rem); font-weight: 400; color: var(--cream); display: flex; align-items: center; gap: .7rem; transition: background .3s, border-color .3s, transform .3s; }
+    .kids-feat:hover { background: rgba(201,168,76,.1); border-color: rgba(201,168,76,.25); transform: translateX(4px); }
+    .kids-feat-icon { font-size: 1.2rem; flex-shrink: 0; }
+    .kids-callout { font-family: 'Playfair Display', serif; font-size: clamp(1.4rem,2.8vw,2.6rem); font-weight: 700; line-height: 1.25; }
+    .kids-callout em { font-style: italic; color: var(--gold); }
+    .kids-sub { font-size: clamp(.85rem,1.1vw,1rem); font-weight: 300; line-height: 1.8; color: rgba(250,250,250,.58); margin-top: 1.4rem; }
+
+    /* REVIEWS */
+    #reviews { background: var(--black); }
+    .reviews-header { max-width: 1200px; margin: 0 auto clamp(2.5rem,5vw,3.5rem); display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 2rem; }
+    .score-big { font-family: 'Playfair Display', serif; font-size: clamp(3.5rem,6vw,5.5rem); font-weight: 900; color: var(--gold); line-height: 1; }
+    .score-stars { font-size: clamp(.9rem,1.3vw,1.2rem); letter-spacing: .08em; color: var(--gold); }
+    .score-count { font-size: clamp(.68rem,.78vw,.78rem); letter-spacing: .15em; text-transform: uppercase; color: var(--dim); margin-top: .4rem; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem,2vw,1.5rem); max-width: 1200px; margin: 0 auto; }
+    .review-card { background: var(--charcoal); border: 1px solid rgba(201,168,76,.07); padding: clamp(1.5rem,2.2vw,2.2rem); transition: border-color .3s, transform .3s, box-shadow .3s; position: relative; }
+    .review-card:hover { border-color: rgba(201,168,76,.28); transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+    .review-stars { color: var(--gold); font-size: .9rem; margin-bottom: 1.1rem; }
+    .review-text { font-size: clamp(.84rem,1vw,.93rem); font-weight: 300; line-height: 1.8; color: rgba(250,250,250,.7); font-style: italic; }
+    .review-author { font-size: clamp(.68rem,.78vw,.76rem); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-top: 1.4rem; }
+
+    /* HOURS */
+    #hours { background: var(--charcoal2); }
+    .hours-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2.5rem,6vw,5rem); align-items: start; }
+    .hours-table { margin-top: 2rem; }
+    .hours-row { display: flex; justify-content: space-between; align-items: center; padding: clamp(.7rem,1.1vw,1rem) 0; border-bottom: 1px solid rgba(250,250,250,.05); font-size: clamp(.82rem,1vw,.92rem); transition: background .2s; border-radius: 2px; }
+    .hours-row:first-child { border-top: 1px solid rgba(250,250,250,.05); }
+    .hours-day { font-weight: 500; color: rgba(250,250,250,.65); }
+    .hours-time { color: var(--gold); font-weight: 400; }
+    .hours-closed { color: var(--dim); }
+    .hours-today { background: rgba(201,168,76,.06); padding-left: .8rem; padding-right: .8rem; }
+    .hours-today .hours-day { color: var(--gold); }
+    .hours-contact { margin-top: 2.2rem; display: flex; flex-direction: column; gap: 1.1rem; }
+    .contact-item { display: flex; align-items: center; gap: 1rem; font-size: clamp(.82rem,1vw,.92rem); color: rgba(250,250,250,.65); }
+    .contact-icon { font-size: 1.05rem; flex-shrink: 0; }
+    .contact-item a { color: var(--gold); text-decoration: none; transition: color .2s; }
+    .contact-item a:hover { color: var(--gold-lt); }
+    .map-card { background: var(--black); border: 1px solid rgba(201,168,76,.12); padding: 2.5rem; text-align: center; transition: border-color .3s; position: relative; overflow: hidden; }
+    .map-card:hover { border-color: rgba(201,168,76,.3); }
+    .map-card::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle at center, rgba(201,168,76,.04), transparent 60%); pointer-events: none; }
+    .map-visual { position: relative; height: 220px; margin-bottom: 1.8rem; display: flex; align-items: center; justify-content: center; }
+    .map-grid-svg { width: 100%; height: 100%; }
+    .map-addr { font-size: clamp(.82rem,1vw,.92rem); color: rgba(250,250,250,.6); line-height: 1.7; margin-bottom: 1.5rem; }
+    .map-btn { display: inline-block; font-size: clamp(.72rem,.82vw,.8rem); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--black); background: var(--gold); padding: .8rem 2rem; text-decoration: none; transition: background .2s, transform .2s, box-shadow .2s; }
+    .map-btn:hover { background: var(--gold-lt); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,168,76,.3); }
+
+    /* CTA BAND */
+    #cta-band { background: var(--gold); padding: clamp(3rem,6vw,5rem) var(--px); text-align: center; position: relative; overflow: hidden; }
+    #cta-band::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 20% 50%, rgba(255,255,255,.08), transparent), radial-gradient(ellipse 60% 80% at 80% 50%, rgba(0,0,0,.06), transparent); pointer-events: none; }
+    #cta-band h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem,4vw,3.2rem); font-weight: 900; color: var(--black); letter-spacing: -.01em; }
+    #cta-band h2 em { font-style: italic; font-weight: 400; }
+    #cta-band p { font-size: clamp(.88rem,1.1vw,1rem); color: rgba(10,10,10,.65); margin-top: .8rem; }
+    .cta-band-btn { display: inline-block; margin-top: 2rem; font-size: clamp(.74rem,.86vw,.82rem); font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--white); background: var(--black); padding: clamp(.9rem,1.2vw,1.1rem) clamp(2rem,3.5vw,3rem); text-decoration: none; transition: opacity .2s, transform .2s, box-shadow .2s; }
+    .cta-band-btn:hover { opacity: .85; transform: translateY(-3px); box-shadow: 0 12px 36px rgba(0,0,0,.3); }
+
+    /* FOOTER */
+    footer { background: #040404; padding: clamp(2rem,3.5vw,3rem) var(--px); display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(201,168,76,.08); flex-wrap: wrap; gap: 1.2rem; }
+    .footer-brand { font-family: 'Playfair Display', serif; font-size: clamp(1rem,1.3vw,1.15rem); font-weight: 700; color: var(--white); }
+    .footer-brand span { color: var(--gold); }
+    .footer-copy { font-size: clamp(.68rem,.78vw,.75rem); color: var(--dim); }
+    .footer-links { display: flex; gap: clamp(1rem,2.5vw,1.5rem); flex-wrap: wrap; }
+    .footer-links a { font-size: clamp(.68rem,.78vw,.75rem); font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--dim); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: var(--gold); }
+
+    /* REVEAL ANIMATIONS */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .75s cubic-bezier(.22,1,.36,1), transform .75s cubic-bezier(.22,1,.36,1); }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-left  { transform: translateX(-30px); }
+    .reveal-right { transform: translateX(30px); }
+    .reveal-left.visible, .reveal-right.visible { transform: none; }
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .3s; }
+    .reveal-delay-4 { transition-delay: .4s; }
+    .reveal-delay-5 { transition-delay: .5s; }
+
+    .count-up { display: inline-block; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .nav-burger { display: flex; }
+      .nav-drawer { display: flex; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .reviews-grid  { grid-template-columns: 1fr 1fr; }
+      .about-grid    { grid-template-columns: 1fr; }
+      .kids-grid     { grid-template-columns: 1fr; }
+      .hours-inner   { grid-template-columns: 1fr; }
+      .about-badge { top: -1rem; right: -.5rem; }
+      .about-deco-num { display: none; }
+      .hero-stats { display: none; }
+      .scroll-hint { display: none; }
+      .reviews-header { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 540px) {
+      :root { --px: 1.25rem; }
+      .services-grid { grid-template-columns: 1fr; }
+      .reviews-grid  { grid-template-columns: 1fr; }
+      .kids-features { grid-template-columns: 1fr; }
+      .hero-ticker { display: none; }
+      footer { flex-direction: column; text-align: center; justify-content: center; }
+      .footer-links { justify-content: center; }
+      .nav-cta { padding: .55rem 1.1rem; font-size: .7rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .shimmer-text { animation: none; -webkit-text-fill-color: var(--white); }
+      .hero-orb-1, .hero-orb-2 { animation: none; }
+      .scissor-deco { animation: none; }
+      .scroll-line  { animation: none; }
+      .ticker-track, .marquee-track { animation-play-state: paused; }
+      #cursor, #cursor-ring { display: none; }
+      body { cursor: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <div class="nav-drawer" id="drawer">
+    <a href="#about"    onclick="closeDrawer()">Sobre</a>
+    <a href="#services" onclick="closeDrawer()">Serviços</a>
+    <a href="#kids"     onclick="closeDrawer()">Área Kids</a>
+    <a href="#reviews"  onclick="closeDrawer()">Avaliações</a>
+    <a href="#hours"    onclick="closeDrawer()">Contato</a>
+    <a class="drawer-cta btn-primary" href="https://osbeautybarbearia.gendo.app" target="_blank">Agendar agora</a>
+  </div>
+
+  <nav id="nav">
+    <a class="nav-logo" href="#hero">Os <span>Beauty</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#kids">Área Kids</a></li>
+      <li><a href="#reviews">Avaliações</a></li>
+      <li><a href="#hours">Contato</a></li>
+    </ul>
+    <a class="nav-cta" href="https://osbeautybarbearia.gendo.app" target="_blank">Agendar</a>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-grid"></div>
+
+    <svg class="scissor-deco" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="170" cy="130" r="60" stroke="white" stroke-width="16"/>
+      <circle cx="330" cy="130" r="60" stroke="white" stroke-width="16"/>
+      <circle cx="152" cy="112" r="24" fill="white"/>
+      <circle cx="312" cy="112" r="24" fill="white"/>
+      <line x1="215" y1="168" x2="430" y2="400" stroke="white" stroke-width="16" stroke-linecap="round"/>
+      <line x1="285" y1="168" x2="70"  y2="400" stroke="white" stroke-width="16" stroke-linecap="round"/>
+      <circle cx="250" cy="220" r="12" fill="white" opacity=".4"/>
+    </svg>
+
+    <p class="hero-eyebrow reveal">Barbearia · Bagé, RS · Desde 2020</p>
+    <h1 class="reveal reveal-delay-1">
+      <span class="shimmer-text">Arte no corte,</span><br/>
+      <em>alma no cuidado</em>
+    </h1>
+    <p class="hero-sub reveal reveal-delay-2">Do bebê ao vovô — especialistas em cortes masculinos que unem tradição, modernidade e atendimento humanizado.</p>
+    <div class="hero-actions reveal reveal-delay-3">
+      <a class="btn-primary" href="https://osbeautybarbearia.gendo.app" target="_blank">Agendar horário</a>
+      <a class="btn-outline"  href="tel:+5353997012748">Ligar agora</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num"><span class="count-up" data-target="425">0</span>+</div>
+        <div class="stat-label">Avaliações</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">5,0</div>
+        <div class="stat-label">Nota Google</div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Rolar</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <div class="hero-ticker">
+      <div class="ticker-track">
+        <span class="ticker-item">Corte Masculino</span><span class="ticker-sep">✦</span>
+        <span class="ticker-item">Barba com Toalha Quente</span><span class="ticker-sep">✦</span>
+        <span class="ticker-item">Área Kids</span><span class="ticker-sep">✦</span>
+        <span class="ticker-item">Hidratação Capilar</span><span class="ticker-sep">✦</span>
+        <span class="ticker-item">5 Estrelas Google</span><span class="ticker-sep">✦</span>
+        <span class="ticker-item">Corte Infantil</span><span class="ticker-sep">✦</span>
+        <span class="ticker-item">Cuidados Masculinos</span><span class="ticker-sep">✦</span>
+        <span class="ticker-item">Bagé – RS</span><span class="ticker-sep">✦</span>
+        <span class="ticker-item">Corte Masculino</span><span class="ticker-sep">✦</span>
+        <span class="ticker-item">Barba com Toalha Quente</span><span class="ticker-sep">✦</span>
+        <span class="ticker-item">Área Kids</span><span class="ticker-sep">✦</span>
+        <span class="ticker-item">Hidratação Capilar</span><span class="ticker-sep">✦</span>
+        <span class="ticker-item">5 Estrelas Google</span><span class="ticker-sep">✦</span>
+        <span class="ticker-item">Corte Infantil</span><span class="ticker-sep">✦</span>
+        <span class="ticker-item">Cuidados Masculinos</span><span class="ticker-sep">✦</span>
+        <span class="ticker-item">Bagé – RS</span><span class="ticker-sep">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="section-label reveal">Nossa história</p>
+        <h2 class="reveal reveal-delay-1">Muito mais que<br/>uma <em>barbearia</em></h2>
+        <div class="gold-divider reveal reveal-delay-2"></div>
+        <p class="reveal reveal-delay-2">A Os Beauty nasceu com uma missão clara: criar um espaço onde cada visita vira memória. Localizada no coração de Bagé, somos reconhecidos pela qualidade dos cortes, pelo ambiente moderno e pelo atendimento humanizado.</p>
+        <p class="reveal reveal-delay-3">Com profissionais preparados para o clássico e o contemporâneo, investimos em higiene, organização e nos pequenos detalhes que fazem a diferença — do café quentinho para os pais à maior área kids da região.</p>
+      </div>
+      <div class="about-visual reveal reveal-right reveal-delay-2">
+        <div class="about-card">
+          <p class="about-card-quote">"Elevar a autoestima, fortalecer vínculos familiares e transformar cada atendimento em uma experiência memorável."</p>
+          <p class="about-card-attr">— Proposta Os Beauty Barbearia</p>
+        </div>
+        <div class="about-badge"><span>5,0</span><span>Google</span></div>
+        <div class="about-deco-num">5</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="services-header">
+      <p class="section-label reveal">O que fazemos</p>
+      <h2 class="reveal reveal-delay-1">Serviços com <em>excelência</em></h2>
+      <div class="gold-divider reveal reveal-delay-2"></div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal"><span class="service-icon">✂️</span><div class="service-name">Corte Masculino</div><p class="service-desc">Do clássico ao moderno, executado com precisão por profissionais experientes para qualquer estilo e faixa etária.</p></div>
+      <div class="service-card reveal reveal-delay-1"><span class="service-icon">🧔</span><div class="service-name">Barba Completa</div><p class="service-desc">Tratamento com toalha quente e ozônio para uma experiência de relaxamento e acabamento impecável.</p></div>
+      <div class="service-card reveal reveal-delay-2"><span class="service-icon">👶</span><div class="service-name">Corte Infantil</div><p class="service-desc">Ambiente lúdico e profissionais com jogo de cintura para que o pequeno saia satisfeito — e os pais também.</p></div>
+      <div class="service-card reveal reveal-delay-1"><span class="service-icon">💆</span><div class="service-name">Hidratação Capilar</div><p class="service-desc">Tratamentos que nutrem e restauram os fios, devolvendo saúde e brilho ao cabelo masculino.</p></div>
+      <div class="service-card reveal reveal-delay-2"><span class="service-icon">🧴</span><div class="service-name">Cuidados Masculinos</div><p class="service-desc">Linha completa de produtos e cuidados pensados para a pele e o cabelo do homem moderno.</p></div>
+      <div class="service-card reveal reveal-delay-3"><span class="service-icon">👴</span><div class="service-name">Do Bebê ao Vovô</div><p class="service-desc">Atendemos todas as idades com o mesmo carinho e atenção. A barbearia da família inteira em Bagé.</p></div>
+    </div>
+  </section>
+
+  <div class="marquee-band" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Os Beauty</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Bagé, RS</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Nota 5,0</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">425 Avaliações</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Agendamento Online</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Área Kids</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Tradição &amp; Modernidade</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Os Beauty</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Bagé, RS</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Nota 5,0</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">425 Avaliações</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Agendamento Online</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Área Kids</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Tradição &amp; Modernidade</span><span class="marquee-dot">✦</span>
+    </div>
+  </div>
+
+  <section id="kids">
+    <div class="kids-inner">
+      <div class="kids-grid">
+        <div>
+          <p class="section-label reveal">Diferencial exclusivo</p>
+          <h2 class="reveal reveal-delay-1">A maior <em>Área Kids</em><br/>da região</h2>
+          <div class="gold-divider reveal reveal-delay-2"></div>
+          <p class="reveal reveal-delay-2" style="font-size:clamp(.88rem,1.05vw,.97rem);font-weight:300;line-height:1.85;color:rgba(250,250,250,.6);max-width:min(430px,100%)">Enquanto o pequeno corta o cabelo, os pais relaxam com um café e acompanham tudo num ambiente pensado para que a experiência seja especial para toda a família.</p>
+          <div class="kids-features reveal reveal-delay-3">
+            <div class="kids-feat"><span class="kids-feat-icon">🎱</span> Piscina de bolinhas</div>
+            <div class="kids-feat"><span class="kids-feat-icon">🪂</span> Pula-pula</div>
+            <div class="kids-feat"><span class="kids-feat-icon">🛝</span> Escorregador</div>
+            <div class="kids-feat"><span class="kids-feat-icon">🪑</span> Cadeiras lúdicas</div>
+            <div class="kids-feat"><span class="kids-feat-icon">☕</span> Café para adultos</div>
+            <div class="kids-feat"><span class="kids-feat-icon">🎁</span> Mimos especiais</div>
+          </div>
+        </div>
+        <div class="reveal reveal-left reveal-delay-2">
+          <p class="kids-callout">"Meu filho só confia<br/>no <em>tio amigo</em> para<br/>cortar o cabelo 😊"</p>
+          <p class="kids-sub">Avaliação real de um dos nossos clientes — porque quando a criança confia, os pais voltam. Sempre.</p>
+          <a class="btn-primary" style="margin-top:2rem;display:inline-block" href="https://osbeautybarbearia.gendo.app" target="_blank">Agendar para o filho</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="reviews-header">
+      <div>
+        <p class="section-label reveal">O que dizem nossos clientes</p>
+        <h2 class="reveal reveal-delay-1">Reputação <em>construída</em><br/>visita a visita</h2>
+      </div>
+      <div class="reveal reveal-delay-1" style="text-align:right">
+        <div class="score-big">5,0</div>
+        <div class="score-stars">★★★★★</div>
+        <div class="score-count"><span class="count-up" data-target="425">0</span> avaliações no Google</div>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal"><div class="review-stars">★★★★★</div><p class="review-text">"Atendimento maravilhoso, ambiente acolhedor e pessoas incríveis por trás de tudo. Dá gosto ver o carinho e dedicação com cada cliente. Vocês merecem todo sucesso!"</p><p class="review-author">— Gabrieli Dutra</p></div>
+      <div class="review-card reveal reveal-delay-1"><div class="review-stars">★★★★★</div><p class="review-text">"Atendimento excelente, performance incrível do cabeleireiro e lugar aconchegante. Nota dez! Um espaço diferenciado em Bagé."</p><p class="review-author">— Shoko</p></div>
+      <div class="review-card reveal reveal-delay-2"><div class="review-stars">★★★★★</div><p class="review-text">"Experiência incrível! Ambiente moderno, profissionais de primeira e um espaço que supera todas as expectativas. Simplesmente sensacional."</p><p class="review-author">— Matheus Mattos Wild</p></div>
+    </div>
+  </section>
+
+  <section id="hours">
+    <div class="hours-inner">
+      <div>
+        <p class="section-label reveal">Funcionamento</p>
+        <h2 class="reveal reveal-delay-1">Horários e <em>contato</em></h2>
+        <div class="gold-divider reveal reveal-delay-2"></div>
+        <div class="hours-table reveal reveal-delay-2">
+          <div class="hours-row"><span class="hours-day">Segunda</span><span class="hours-time">09:00 – 19:00</span></div>
+          <div class="hours-row"><span class="hours-day">Terça</span><span class="hours-time">09:00 – 19:00</span></div>
+          <div class="hours-row"><span class="hours-day">Quarta</span><span class="hours-time">09:00 – 19:00</span></div>
+          <div class="hours-row"><span class="hours-day">Quinta</span><span class="hours-time">09:00 – 19:00</span></div>
+          <div class="hours-row"><span class="hours-day">Sexta</span><span class="hours-time">09:00 – 19:00</span></div>
+          <div class="hours-row"><span class="hours-day">Sábado</span><span class="hours-time">09:00 – 17:00</span></div>
+          <div class="hours-row"><span class="hours-day">Domingo</span><span class="hours-closed">Fechado</span></div>
+        </div>
+        <div class="hours-contact reveal reveal-delay-3">
+          <div class="contact-item"><span class="contact-icon">📞</span><a href="tel:+5353997012748">(53) 99701-2748</a></div>
+          <div class="contact-item"><span class="contact-icon">📍</span><span>Av. Tupi Silveira, 1852 – Centro, Bagé – RS</span></div>
+          <div class="contact-item"><span class="contact-icon">🌐</span><a href="https://osbeautybarbearia.gendo.app" target="_blank">osbeautybarbearia.gendo.app</a></div>
+        </div>
+      </div>
+      <div class="reveal reveal-right reveal-delay-2">
+        <div class="map-card">
+          <div class="map-visual">
+            <svg class="map-grid-svg" viewBox="0 0 320 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0" y1="50"  x2="320" y2="50"  stroke="rgba(201,168,76,.08)" stroke-width="1"/>
+              <line x1="0" y1="100" x2="320" y2="100" stroke="rgba(201,168,76,.08)" stroke-width="1"/>
+              <line x1="0" y1="150" x2="320" y2="150" stroke="rgba(201,168,76,.08)" stroke-width="1"/>
+              <line x1="80"  y1="0" x2="80"  y2="200" stroke="rgba(201,168,76,.08)" stroke-width="1"/>
+              <line x1="160" y1="0" x2="160" y2="200" stroke="rgba(201,168,76,.08)" stroke-width="1"/>
+              <line x1="240" y1="0" x2="240" y2="200" stroke="rgba(201,168,76,.08)" stroke-width="1"/>
+              <rect x="40" y="60" width="240" height="18" rx="2" fill="rgba(201,168,76,.1)"/>
+              <rect x="40" y="120" width="240" height="18" rx="2" fill="rgba(201,168,76,.07)"/>
+              <rect x="100" y="20" width="18" height="160" rx="2" fill="rgba(201,168,76,.07)"/>
+              <rect x="200" y="20" width="18" height="160" rx="2" fill="rgba(201,168,76,.07)"/>
+              <rect x="42" y="82" width="54" height="34" rx="2" fill="rgba(201,168,76,.05)"/>
+              <rect x="104" y="82" width="90" height="34" rx="2" fill="rgba(201,168,76,.05)"/>
+              <rect x="42" y="142" width="54" height="36" rx="2" fill="rgba(201,168,76,.05)"/>
+              <rect x="222" y="142" width="56" height="36" rx="2" fill="rgba(201,168,76,.05)"/>
+              <circle cx="160" cy="69" r="14" fill="rgba(201,168,76,.2)" stroke="var(--gold)" stroke-width="1.5"/>
+              <circle cx="160" cy="69" r="5"  fill="var(--gold)"/>
+              <line  x1="160" y1="78" x2="160" y2="92" stroke="var(--gold)" stroke-width="1.5"/>
+              <circle cx="160" cy="69" r="22" stroke="rgba(201,168,76,.3)" stroke-width="1">
+                <animate attributeName="r" values="14;28;14" dur="3s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values=".6;0;.6" dur="3s" repeatCount="indefinite"/>
+              </circle>
+            </svg>
+          </div>
+          <p class="map-addr">Av. Tupi Silveira, 1852<br/>Centro, Bagé – RS, 96400-110</p>
+          <a class="map-btn" href="https://maps.google.com/?q=Av.+Tupi+Silveira,+1852,+Bagé,+RS" target="_blank">Ver no Google Maps →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta-band">
+    <h2 class="reveal">Pronto para o seu <em>melhor visual</em>?</h2>
+    <p class="reveal reveal-delay-1">Agende online em segundos. Sem fila, sem espera desnecessária.</p>
+    <a class="cta-band-btn reveal reveal-delay-2" href="https://osbeautybarbearia.gendo.app" target="_blank">Agendar agora →</a>
+  </section>
+
+  <footer>
+    <div class="footer-brand">Os <span>Beauty</span> Barbearia</div>
+    <div class="footer-copy">© 2025 Os Beauty Barbearia · Bagé, RS</div>
+    <div class="footer-links">
+      <a href="tel:+5353997012748">Telefone</a>
+      <a href="https://maps.google.com/?q=Av.+Tupi+Silveira,+1852,+Bagé,+RS" target="_blank">Localização</a>
+      <a href="https://osbeautybarbearia.gendo.app" target="_blank">Agendamento</a>
+    </div>
+  </footer>
+
+  <script>
+    /* CUSTOM CURSOR */
+    const cur  = document.getElementById('cursor');
+    const ring = document.getElementById('cursor-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+
+    function animCursor() {
+      cur.style.left  = mx + 'px';
+      cur.style.top   = my + 'px';
+      rx += (mx - rx) * .12;
+      ry += (my - ry) * .12;
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(animCursor);
+    }
+    animCursor();
+
+    document.querySelectorAll('a, button, .service-card, .review-card, .kids-feat').forEach(el => {
+      el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+      el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+    });
+
+    /* NAV SCROLL */
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    /* MOBILE BURGER */
+    const burger = document.getElementById('burger');
+    const drawer = document.getElementById('drawer');
+    function closeDrawer() {
+      burger.classList.remove('open');
+      drawer.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    burger.addEventListener('click', () => {
+      const open = burger.classList.toggle('open');
+      drawer.classList.toggle('open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+
+    /* SCROLL REVEAL */
+    const revealEls = document.querySelectorAll('.reveal');
+    const ro = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          ro.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+    revealEls.forEach(el => ro.observe(el));
+
+    /* Hero reveal imediato */
+    setTimeout(() => {
+      document.querySelectorAll('#hero .reveal').forEach(el => el.classList.add('visible'));
+    }, 80);
+
+    /* HIGHLIGHT HOJE */
+    const dayNames = ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'];
+    const today = dayNames[new Date().getDay()];
+    document.querySelectorAll('.hours-day').forEach(el => {
+      if (el.textContent.trim() === today) {
+        el.closest('.hours-row').classList.add('hours-today');
+      }
+    });
+
+    /* COUNT UP */
+    function countUp(el) {
+      const target = parseInt(el.dataset.target, 10);
+      const duration = 1600;
+      const step = target / (duration / 16);
+      let current = 0;
+      const timer = setInterval(() => {
+        current = Math.min(current + step, target);
+        el.textContent = Math.floor(current);
+        if (current >= target) clearInterval(timer);
+      }, 16);
+    }
+    const coRo = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { countUp(e.target); coRo.unobserve(e.target); }
+      });
+    }, { threshold: .5 });
+    document.querySelectorAll('.count-up').forEach(el => coRo.observe(el));
+
+    /* PARALLAX ORBS */
+    document.addEventListener('mousemove', e => {
+      const xp = (e.clientX / window.innerWidth  - .5) * 30;
+      const yp = (e.clientY / window.innerHeight - .5) * 20;
+      document.querySelector('.hero-orb-1').style.transform = `translate(${xp}px,${yp}px) scale(1)`;
+      document.querySelector('.hero-orb-2').style.transform = `translate(${-xp*.6}px,${-yp*.6}px)`;
+    }, { passive: true });
+  </script>
+</body>
+</html>
